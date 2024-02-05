@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0; 
+            background-image: url('static/index.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: rgba(95, 132, 85, 0.73); /* Header color with transparency */
+            color: #fff; 
+            padding: 23px;
+            display: flex; /* Use flexbox to align items */
+            justify-content: space-between; /* Space items evenly */
+            align-items: center; /* Center items vertically */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+            height: 80px; /* Set explicit height for the header */
+        }
+
+        .logo {
+            max-width: 100px; /* Set the maximum width of the logo */
+            cursor: pointer; /* Change cursor to pointer for better UX */
+        }
+
+        .nav-links {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Calibri', sans-serif; /* Set font to Calibri */
+            font-size: 25px; /* Adjust font size as needed */
+            margin-left: 30px; /* Adjust left margin as needed */
+            margin-right: 50px; /* Adjust right margin as needed */
+            white-space: nowrap; /* Prevent line breaks */
+            width: auto; /* Allow each link to take up its natural width */
+            transition: color 0.3s; /* Smooth transition for color change */
+        }
+
+        .nav-links:hover {
+            color: #C74736; /* Change color on hover */
+        }
+
+        #box-container {
+            text-align: center;
+            margin-top: 150px; /* Adjust top margin as needed */
+            position: relative;
+        }
+
+        #box-img {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        #box-label {
+            font-size: 18px;
+            font-family: 'Calibri', sans-serif;
+            color: #ffffff; /* Adjust label color as needed */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #box-label h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="/index"><img src="static/logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div>
+            <a class="nav-links" href="/profile">Profile</a>
+            <a class="nav-links" href="/works">Works</a>
+            <a class="nav-links" href="/contact">Contact</a>
+        </div>
+    </header>
+
+    <div id="box-container">
+        <img id="box-img" src="static/box.png" alt="Box Photo">
+        <div id="box-label">
+            <h2>Contents of Works:</h2>
+            <p>Area of Circle</p>
+            <p>Area of Triangle</p>
+            <p>Function to Uppercase</p>
+            <p>Linked List</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sorted Linked Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #333;
+        }
+
+        input[type="submit"] {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Merge Sorted Linked Lists</h2>
+
+    <form action="/mergedList" method="post">
+        <label for="list1_values">Enter values for List 1 (comma-separated):</label>
+        <input type="text" id="list1_values" name="list1_values">
+
+        <label for="list2_values">Enter values for List 2 (comma-separated):</label>
+        <input type="text" id="list2_values" name="list2_values">
+
+        <input type="submit" value="Merge Lists">
+    </form>
+
+    <div class="result">
+        {% if result_values %}
+            Merged List: {{ print_linked_list(result_values) }}
+        {% endif %}
+        {% if error %}
+            <p style="color: red;">Error: {{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

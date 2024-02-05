@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://wallpapers.com/images/hd/coquette-z7g866zr50wqtz0v.jpg');
+            color: #0c0808;
+            text-align: center;
+            box-sizing: border-box; /* Include padding and border in total width and height */
+        }
+
+        header {
+            background-color: rgba(95, 132, 85, 0.73);
+            color: #fff;
+            padding: 20px; /* Adjust padding as needed */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Add the following CSS to remove margin for the logo and nav-links */
+        .logo,
+        .nav-links {
+            margin: 0;
+        }
+
+        .logo {
+            max-width: 100px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Calibri', sans-serif;
+            font-size: 25px;
+            margin-left: 30px;
+            margin-right: 50px;
+            white-space: nowrap;
+            width: auto;
+            transition: color 0.3s;
+        }
+
+        .nav-links:hover {
+            color: #C74736;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .profile-photo {
+            width: 280px;
+            height: 280px; 
+            margin-top: -10px;
+            border-radius: 50%;
+            background-image: url('static/LeighPic2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name {
+            font-size: 24px;
+            font-family: 'Lucida Handwriting', cursive;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #4b3621;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            height: 80px; 
+        }
+
+        .details {
+            display: flex;
+            margin-top: -10px;
+            background-color: rgba(170, 181, 151, 0.5);
+        }
+
+        .column {
+            flex: 1;
+            margin-top: -50px;
+            padding: 20px 10px; 
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            height: 150px; 
+        }
+
+        .title-box {
+            background-color: #aab597;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .title {
+            font-weight: bold;
+            color: #0c0808;
+            font-size: 18px;
+        }
+
+        .column p {
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 30px;
+            font-family: 'Lucida Handwriting', cursive;
+            font-weight: bold;
+            color: #4b3621; 
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); 
+            height: 100px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="/index"><img src="static/logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div>
+            <a class="nav-links" href="/profile">Profile</a>
+            <a class="nav-links" href="/works">Works</a>
+            <a class="nav-links" href="/contact">Contact</a>
+        </div>
+    </header>
+
+
+    <div class="profile-container">
+        <div class="profile-photo"></div>
+        <div class="name">
+            <div>Frances Leigh Baay</div>
+        </div>
+    </div>
+
+    <div class="details">
+        <div class="column">
+            <div class="title-box">
+                <div class="title">Personal</div>
+            </div>
+            <p> ౨ৎ Age: 20 Years Old
+                <br>
+                ౨ৎ Birthday: March 19
+                <br>
+                ౨ৎ Address: Caloocan City
+                <br>
+                ౨ৎ Hobbies: Reading, Watching Series / Movies, and Art Journaling
+                <br>
+            </p>
+        </div>
+        <div class="column">
+            <div class="title-box">
+                <div class="title">School</div>
+            </div>
+            <p> ౨ৎ Course: BS in Computer Engineering
+                <br>
+                ౨ৎ Year Level: 2nd Year
+                <br>
+                ౨ৎ Section: IV
+                <br>
+                ౨ৎ Subject: Data Structures and Algorithm
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        I can't go on, I'll go on.
+    </div>
+    
+</body>
+</html>

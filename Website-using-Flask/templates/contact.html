@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0; 
+            background-image: url('static/contact.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: rgba(59, 19, 75, 0.73);
+            color: #fff;
+            padding: 20px; /* Adjust padding as needed */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Add the following CSS to remove margin for the logo and nav-links */
+        .logo,
+        .nav-links {
+            margin: 0;
+        }
+
+        .logo {
+            max-width: 100px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Calibri', sans-serif;
+            font-size: 25px;
+            margin-left: 30px;
+            margin-right: 50px;
+            white-space: nowrap;
+            width: auto;
+            transition: color 0.3s;
+        }
+
+        .nav-links:hover {
+            color: #C74736;
+        }
+
+        .container {
+            background-color: #d6e9d6; 
+            width: 40%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 600px; 
+}
+
+        .left-side {
+            text-align: center;
+        }
+
+        .left-side img {
+            max-width: 100%;
+        }
+
+        .right-side {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .contact-label {
+            font-weight: bold;
+        }
+
+        .contact-details {
+            color: #333;
+        }
+
+        .pics {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -30px; 
+        }
+
+        .pic {
+            flex: 1;
+            text-align: center;
+        }
+
+        .pic img {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: rgba(59, 19, 75, 0.73);; 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <a href="/index"><img src="static/logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div>
+            <a class="nav-links" href="/profile">Profile</a>
+            <a class="nav-links" href="/works">Works</a>
+            <a class="nav-links" href="/contact">Contact</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-side">
+            <img src="https://media.tenor.com/1buQJI4o9vAAAAAC/cute-pink.gif" alt="Cute Pink Gif">
+        </div>
+        <div class= "right-side">
+            <div class="contact-info">
+                <span class="contact-label">Email:</span>
+                <span class="contact-details">francesleighb@example.com</span>
+                <br><br>
+                <span class="contact-label">Phone:</span>
+                <span class="contact-details">09991234567</span>
+                <br><br>
+                <span class="contact-label">Address:</span>
+                <span class="contact-details">314 Hogwarts City</span>
+                <br><br>
+            </div>
+            <span class="contact-label">SOCIAL MEDIA</span>
+            <br><br>
+            <div class="pics">
+                <div class="pic pic1">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="static/fb.png" alt="PNG 1">
+                    </a>
+                </div>
+                <div class="pic pic2">
+                    <a href="https://twitter.com/i/flow/login" target="_blank">
+                        <img src="static/twt.png" alt="PNG 2">
+                    </a>
+                </div>
+                <div class="pic pic3">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="static/ig.png" alt="PNG 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 LeighWeb. All rights reserved.
+    </footer>
+
+</body>
+</html>
